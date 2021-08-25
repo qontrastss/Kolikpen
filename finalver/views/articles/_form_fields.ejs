@@ -1,0 +1,42 @@
+<div class="form-group mb-2">
+  <label for="titbrandle"><h4>Model</h4></label>
+  <input required value="<%= article.model %>" type="text" name="model" id="model" class="form-control">
+</div>
+<div class="form-group mb-2">
+  <label for="titbrandle"><h4>Brand</h4></label>
+  <input required value="<%= article.brand %>" type="text" name="brand" id="brand" class="form-control">
+</div>
+<div class="form-group mb-2">
+  <label for="author">Name, Surname</label>
+  <input required value="<%= article.author %>" type="text" name="author" id="author" class="form-control">
+</div>
+<div class="form-group mb-2">
+  <label for="price"><h4>Price</h4></label>
+  <input required value="<%= article.price %>" type="text" name="price" id="price" class="form-control">
+</div>
+<div class="form-group">
+  <label for="year">Year</label>
+  <input required value="<%= article.year %>" type="text" name="year" id="year" class="form-control">
+</div>
+<div class="form-group">
+  <label for="hosts">Hosts</label>
+  <input required value="<%= article.hosts %>" type="text" name="hosts" id="hosts" class="form-control">
+</div>
+<div class="form-group">
+  <label for="mileage">Mileage(km)</label>
+  <input required value="<%= article.mileage %>" type="text" name="mileage" id="mileage" class="form-control">
+</div>
+<div class="form-group mb-2">
+  <label for="description"><h4>Description</h4></label>
+  <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group mb-2">
+  <label for="photo"><h4>URL of photo</h4></label>
+  <textarea name="photo" id="photo" class="form-control"><%= article.photo %></textarea>
+</div>
+<div class="form-group mb-2">
+  <label for="markdown"><h4>Markdown</h4></label>
+  <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+</div>
+<a href="/articles/catalogue" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
